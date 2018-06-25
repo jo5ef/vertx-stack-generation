@@ -75,4 +75,13 @@ public class AbstractVerticle extends io.vertx.core.AbstractVerticle {
   public Completable rxStop() {
     return null;
   }
+
+  /**
+   * Returns the rxjava2 vertx instance.
+   *
+   * @return the rx vertx instance
+   */
+  public io.vertx.reactivex.core.Vertx getRxVertx() {
+    return vertx;
+  }
 }
